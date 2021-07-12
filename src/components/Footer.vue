@@ -56,7 +56,22 @@
       </div>
     </section>
 
-    <section class="social"></section>
+    <section class="social">
+      <div class="container">
+        <div class="left-side">
+          <span> SIGN-UP NOW </span>
+        </div>
+
+        <div class="right-side">
+          <span>FOLLOW US</span>
+          <img src="../assets/footer-facebook.png" alt="" />
+          <img src="../assets/footer-twitter.png" alt="" />
+          <img src="../assets/footer-youtube.png" alt="" />
+          <img src="../assets/footer-pinterest.png" alt="" />
+          <img src="../assets/footer-periscope.png" alt="" />
+        </div>
+      </div>
+    </section>
   </footer>
 </template>
 
@@ -68,6 +83,8 @@ export default {
 
 
 <style scoped lang="scss">
+@import "../style/colors";
+
 .section-link {
   background-image: url("../assets/footer-bg.jpg");
   background-size: cover;
@@ -86,7 +103,7 @@ export default {
       color: white;
       padding: 5px 24px 0 0;
 
-      &:first-child{
+      &:first-child {
         font-weight: bold;
         padding-bottom: 6px;
       }
@@ -103,6 +120,37 @@ export default {
       position: absolute;
       top: 50%;
       transform: translate(-100%, -50%);
+    }
+  }
+}
+
+.social {
+  background-color: #303030;
+  height: 80px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 80px;
+
+    .left-side {
+      span{
+        color: white;
+        padding: 10px;
+        border: 1px solid $dc-blue-color;
+      }
+    }
+
+    .right-side{
+
+      span{
+        color: $dc-blue-color;
+      }
+
+      img{
+        padding-left: 15px;
+      }
     }
   }
 }
