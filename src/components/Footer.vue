@@ -7,12 +7,12 @@
             <ul>
               <li class="bold">DC COMICS</li>
               <li><a href="">Characters</a></li>
-              <li><a href="">Characters</a></li>
-              <li><a href="">Characters</a></li>
-              <li><a href="">Characters</a></li>
-              <li><a href="">Characters</a></li>
-              <li><a href="">Characters</a></li>
-              <li><a href="">Characters</a></li>
+              <li><a href="">Comics</a></li>
+              <li><a href="">Movies</a></li>
+              <li><a href="">TV</a></li>
+              <li><a href="">Games</a></li>
+              <li><a href="">Videos</a></li>
+              <li><a href="">News</a></li>
             </ul>
             <ul>
               <li class="bold">SHOP</li>
@@ -59,7 +59,7 @@
     <section class="social">
       <div class="container">
         <div class="left-side">
-          <span> SIGN-UP NOW </span>
+          <span> SIGN-UP NOW! </span>
         </div>
 
         <div class="right-side">
@@ -91,6 +91,7 @@ export default {
   height: 400px;
   position: relative;
   overflow: hidden;
+  padding: 40px 0;
 
   .container {
     display: flex;
@@ -107,7 +108,11 @@ export default {
 
       &:first-child {
         font-weight: bold;
-        padding-bottom: 6px;
+        padding-bottom: 14px;
+      }
+
+      &:last-child {
+        padding-bottom: 14px;
       }
     }
 
@@ -149,6 +154,7 @@ export default {
         color: white;
         padding: 10px;
         border: 1px solid $dc-blue-color;
+        box-shadow: 0 0 2px 1px $dc-blue-color;
       }
     }
 
@@ -159,6 +165,7 @@ export default {
 
       img {
         padding-left: 15px;
+        vertical-align: middle;
       }
     }
   }

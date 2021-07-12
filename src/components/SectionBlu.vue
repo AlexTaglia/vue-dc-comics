@@ -37,26 +37,27 @@ export default {
 
 section {
   background-color: $dc-blue-color;
+  padding: 30px 0;
+}
+.container {
+  display: flex;
+  align-items: text-bottom;
 
-  .container {
-    display: flex;
-    align-items: text-bottom;
+  .col {
+    width: calc(100% / 5);
+    text-align: center;
+    height: 60px;
+    vertical-align: center;
 
-    .col {
-      width: calc(100% / 5);
-      text-align: center;
-      height: 60px;
-      vertical-align: center;
+    img {
+      height: 50px;
+      vertical-align: middle;
+    }
 
-      img {
-        width: 30px;
-      };
-
-      span {
-        color: $text-white;
-        font-family: 'Roboto Condensed', sans-serif;
-        line-height: 60px
-      };
+    span {
+      color: $text-white;
+      font-family: "Roboto Condensed", sans-serif;
+      line-height: 60px;
     }
   }
 }
