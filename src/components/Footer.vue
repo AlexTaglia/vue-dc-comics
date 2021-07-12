@@ -90,6 +90,7 @@ export default {
   background-size: cover;
   height: 400px;
   position: relative;
+  overflow: hidden;
 
   .container {
     display: flex;
@@ -102,6 +103,7 @@ export default {
     li {
       color: white;
       padding: 5px 24px 0 0;
+      font-family: "Roboto Condensed", sans-serif;
 
       &:first-child {
         font-weight: bold;
@@ -111,12 +113,13 @@ export default {
 
     a {
       color: gray;
+      font-family: "Roboto Condensed", sans-serif;
     }
   }
 
   .right-side {
     img {
-      height: 300px;
+      height: 550px;
       position: absolute;
       top: 50%;
       transform: translate(-100%, -50%);
@@ -129,26 +132,32 @@ export default {
   height: 80px;
 
   .container {
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     line-height: 80px;
 
+    span {
+      font-family: "Roboto Condensed", sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
     .left-side {
-      span{
+      span {
         color: white;
         padding: 10px;
         border: 1px solid $dc-blue-color;
       }
     }
 
-    .right-side{
-
-      span{
+    .right-side {
+      span {
         color: $dc-blue-color;
       }
 
-      img{
+      img {
         padding-left: 15px;
       }
     }

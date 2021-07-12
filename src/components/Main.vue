@@ -22,5 +22,7 @@ export default {
     background-color: black;
     height: 80px;
     color: $text-white;
+    z-index: 1;
+
   }
 </style>

@@ -54,6 +54,7 @@ section {
 
       span {
         color: $text-white;
+        font-family: 'Roboto Condensed', sans-serif;
         line-height: 60px
       };
     }
