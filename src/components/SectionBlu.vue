@@ -35,29 +35,26 @@ export default {
 <style scoped lang="scss">
 @import "../style/colors";
 
+
 section {
   background-color: $dc-blue-color;
   padding: 30px 0;
 }
 .container {
   display: flex;
-  align-items: text-bottom;
 
   .col {
     width: calc(100% / 5);
-    text-align: center;
-    height: 60px;
-    vertical-align: center;
 
     img {
       height: 50px;
       vertical-align: middle;
+      padding-right: 20px;
     }
 
     span {
       color: $text-white;
       font-family: "Roboto Condensed", sans-serif;
-      line-height: 60px;
     }
   }
 }

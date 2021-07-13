@@ -102,7 +102,7 @@ export default {
     display: flex;
 
     li {
-      color: white;
+      color: $text-white;
       padding: 5px 24px 0 0;
       font-family: "Roboto Condensed", sans-serif;
 
@@ -117,7 +117,7 @@ export default {
     }
 
     a {
-      color: gray;
+      color: $text-gray;
       font-family: "Roboto Condensed", sans-serif;
     }
   }
@@ -133,11 +133,10 @@ export default {
 }
 
 .social {
-  background-color: #303030;
+  background-color: $bg-gray-footer;
   height: 80px;
 
   .container {
-    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -151,7 +150,7 @@ export default {
 
     .left-side {
       span {
-        color: white;
+        color: $text-white;
         padding: 10px;
         border: 1px solid $dc-blue-color;
         box-shadow: 0 0 2px 1px $dc-blue-color;
@@ -161,7 +160,7 @@ export default {
     .right-side {
       span {
         color: $dc-blue-color;
-      }
+        margin-top: 10px;      }
 
       img {
         padding-left: 15px;
