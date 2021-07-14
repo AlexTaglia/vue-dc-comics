@@ -75,98 +75,99 @@
   </footer>
 </template>
 
+
 <script>
-export default {
-  name: "Footer",
-};
+  export default {
+    name: "Footer",
+  };
 </script>
 
 
 <style scoped lang="scss">
-@import "../style/colors";
+  @import "../style/colors";
 
-.section-link {
-  background-image: url("../assets/footer-bg.jpg");
-  background-size: cover;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-  padding: 40px 0;
+  .section-link {
+    background-image: url("../assets/footer-bg.jpg");
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
 
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .left-side {
-    display: flex;
-
-    li {
-      color: $text-white;
-      padding: 5px 24px 0 0;
-      font-family: "Roboto Condensed", sans-serif;
-
-      &:first-child {
-        font-weight: bold;
-        padding-bottom: 14px;
-      }
-
-      &:last-child {
-        padding-bottom: 14px;
-      }
-    }
-
-    a {
-      color: $text-gray;
-      font-family: "Roboto Condensed", sans-serif;
-    }
-  }
-
-  .right-side {
-    img {
-      height: 550px;
-      position: absolute;
-      top: 50%;
-      transform: translate(-100%, -50%);
-    }
-  }
-}
-
-.social {
-  background-color: $bg-gray-footer;
-  height: 80px;
-
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    line-height: 80px;
-
-    span {
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 20px;
-      font-weight: bold;
+    .container {
+      display: flex;
+      justify-content: space-between;
     }
 
     .left-side {
-      span {
+      display: flex;
+
+      li {
         color: $text-white;
-        padding: 10px;
-        border: 1px solid $dc-blue-color;
-        box-shadow: 0 0 2px 1px $dc-blue-color;
+        padding: 5px 24px 0 0;
+        font-family: "Roboto Condensed", sans-serif;
+
+        &:first-child {
+          font-weight: bold;
+          padding-bottom: 14px;
+        }
+
+        &:last-child {
+          padding-bottom: 14px;
+        }
+      }
+
+      a {
+        color: $text-gray;
+        font-family: "Roboto Condensed", sans-serif;
       }
     }
 
     .right-side {
-      span {
-        color: $dc-blue-color;
-        margin-top: 10px;      }
-
       img {
-        padding-left: 15px;
-        vertical-align: middle;
+        height: 550px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-100%, -50%);
       }
     }
   }
-}
+
+  .social {
+    background-color: $bg-gray-footer;
+    height: 80px;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 78px;
+
+      span {
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .left-side {
+        span {
+          color: $text-white;
+          padding: 10px;
+          border: 1px solid $dc-blue-color;
+          box-shadow: 0 0 2px 1px $dc-blue-color;
+        }
+      }
+
+      .right-side {
+        span {
+          color: $dc-blue-color;
+          margin-top: 10px;      }
+
+        img {
+          padding-left: 15px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
 </style>

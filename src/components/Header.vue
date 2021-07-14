@@ -1,5 +1,4 @@
 <template>
-
   <header class="container">
     <nav>
       <div class="logo">
@@ -8,68 +7,65 @@
 
       <div class="menu">
         <ul>
-          <li><a href="">CHARACTERS</a></li>
-          <li><a href="">COMICS</a></li>
-          <li><a href="">MOVIES</a></li>
-          <li><a href="">TV</a></li>
-          <li><a href="">GAMES</a></li>
-          <li><a href="">COLLECTIBLES</a></li>
-          <li><a href="">VIDEOS</a></li>
-          <li><a href="">FANS</a></li>
-          <li><a href="">NEWS</a></li>
-          <li><a href="">SHOP</a></li>
+          <li v-for="element in navList" :key="element.id">
+            <a :href="element.link">{{ element.name }}</a>
+          </li>
         </ul>
       </div>
     </nav>
   </header>
-
 </template>
 
 <script>
-export default {
-  name: "Header",
-};
+  import navJson from "../jsons/nav-list";
+
+  export default {
+    name: "Header",
+
+    data: function () {
+      return {
+        navList: navJson,
+      };
+    },
+  };
 </script>
 
 
 <style scoped lang="scss">
+  @import "../style/colors";
 
-@import "../style/colors";
+  header {
+    height: 80px;
+    padding: 10px 0;
 
-header {
-  height: 80px;
-  padding: 10px 0;
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    img{
-      height: 60px;
-    }
-
-    ul{
+    nav {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-      li{
+      img {
+        height: 60px;
+      }
 
-        a{
-          color: black;
-          font-family: 'Roboto Condensed', sans-serif;
-          font-weight: bold;
-          margin-left: 24px;
-          padding-bottom: 23px;
+      ul {
+        display: flex;
 
-          &:hover{
-            color: $dc-blue-color;
-            border-bottom: 5px solid $dc-blue-color;
+        li {
+          a {
+            color: black;
+            font-family: "Roboto Condensed", sans-serif;
+            font-weight: bold;
+            margin-left: 24px;
+            padding-bottom: 23px;
+            text-transform: uppercase;
+
+            &:hover {
+              color: $dc-blue-color;
+              border-bottom: 5px solid $dc-blue-color;
+            }
           }
         }
       }
     }
   }
-}
-
-
 </style>

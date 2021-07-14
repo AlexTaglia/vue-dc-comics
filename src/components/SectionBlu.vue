@@ -25,37 +25,37 @@
   </section>
 </template>
 
+
 <script>
-export default {
-  name: "SectionBlu",
-};
+  export default {
+    name: "SectionBlu",
+  };
 </script>
 
 
 <style scoped lang="scss">
-@import "../style/colors";
+  @import "../style/colors";
 
+  section {
+    background-color: $dc-blue-color;
+    padding: 30px 0;
+  }
+  .container {
+    display: flex;
 
-section {
-  background-color: $dc-blue-color;
-  padding: 30px 0;
-}
-.container {
-  display: flex;
+    .col {
+      width: calc(100% / 5);
 
-  .col {
-    width: calc(100% / 5);
+      img {
+        height: 50px;
+        vertical-align: middle;
+        padding-right: 20px;
+      }
 
-    img {
-      height: 50px;
-      vertical-align: middle;
-      padding-right: 20px;
-    }
-
-    span {
-      color: $text-white;
-      font-family: "Roboto Condensed", sans-serif;
+      span {
+        color: $text-white;
+        font-family: "Roboto Condensed", sans-serif;
+      }
     }
   }
-}
 </style>

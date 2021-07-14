@@ -1,0 +1,53 @@
+[
+    {
+        "id": 0,
+        "name": "characters",
+        "link": "/characters"
+    },
+    {
+        "id": 1,
+        "name": "comics",
+        "link": "/comics"
+    },
+    {
+        "id": 2,
+        "name": "movies",
+        "link": "/movies"
+    },
+    {
+        "id": 3,
+        "name": "tv",
+        "link": "/tv"
+    },
+    {
+        "id": 4,
+        "name": "games",
+        "link": "/games"
+    },
+    {
+        "id": 5,
+        "name": "collectibles",
+        "link": "/collectibles"
+    },
+    {
+        "id": 6,
+        "name": "videos",
+        "link": "/videos"
+    },
+    {
+        "id": 7,
+        "name": "fans",
+        "link": "/fans"
+    },
+    {
+        "id": 8,
+        "name": "news",
+        "link": "/news"
+    },
+    {
+        "id": 9,
+        "name": "shop",
+        "link": "/shop"
+    }
+
+]

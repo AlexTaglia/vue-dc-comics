@@ -7,34 +7,38 @@
         :thumb="element.thumb"
         :series="element.series"
       />
+      <ButtonLoad/>
     </div>
   </main>
 </template>
 
-<script>
-import Card from "./Card";
 
-export default {
-  name: "Main",
-  components: {
-    Card,
-  },
-  props: {
-    comics: Array,
-  },
-};
+<script>
+  import Card from "./Card";
+  import ButtonLoad from "./ButtonLoad";
+
+  export default {
+    name: "Main",
+    components: {
+      Card,
+      ButtonLoad,
+    },
+    props: {
+      comics: Array,
+    },
+  };
 </script>
 
 
 <style scoped lang="scss">
-@import "../style/colors";
+  @import "../style/colors";
 
-main {
-  background-color: black;
-}
+  main {
+    background-color: $bg-gray-main;
+  }
 
-.container{
-  display: flex;
-  flex-wrap: wrap;
-}
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
 </style>
